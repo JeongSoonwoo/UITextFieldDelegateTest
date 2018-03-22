@@ -28,6 +28,13 @@ class ViewController: UIViewController {
         txtF.resignFirstResponder() //키 패드를 내림
     }
     
+    //background 의 view 를 누르면 내려감
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //txtF.resignFirstResponder()
+        //txtF.endEditing(false)
+        view.endEditing(false)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
